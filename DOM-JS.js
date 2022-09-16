@@ -31,7 +31,7 @@ let changeElement = (data) => {
 
     for (let i = 0; i < data.length; i++) {
 
-        let boxGrid = areaArticle.append(mainDiv);
+        areaArticle.append(mainDiv);
         mainDiv.className= 'box';
 
         mainDiv.append(elementFirstChild,elementSecondChild,elementThirdChild);
