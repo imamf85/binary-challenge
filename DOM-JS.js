@@ -27,23 +27,28 @@ let changeElement = (data) => {
     let elementSecondChild = document.createElement('br');
     let elementThirdChild = document.createElement('span');
 
-    areaArticle.innerHTML="";
+    // areaArticle.innerHTML="";
+    let boxes = []
 
     for (let i = 0; i < data.length; i++) {
 
-        areaArticle.append(mainDiv);
+        
+
         mainDiv.className= 'box';
-
-        mainDiv.append(elementFirstChild,elementSecondChild,elementThirdChild);
-
+        
         elementFirstChild.innerHTML= data[i].title;
         elementThirdChild.innerHTML= data[i].completed ? 'Complete' : 'Not complete';
         
         elementThirdChild.style.color = data[i].completed ? 'Green' : 'Red';
-    
+
+
+        mainDiv.append(elementFirstChild,elementSecondChild,elementThirdChild);
+        boxes.push(mainDiv)
         
     }
 
+    console.log(boxes);
+    areaArticle.append(boxes);
     
    
 
