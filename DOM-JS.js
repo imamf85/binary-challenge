@@ -8,7 +8,6 @@ fetch('https://jsonplaceholder.typicode.com/todos')
         res.json().then((res) => {
             console.log(res);
             changeElement(res);
-            pageOne(res);
         });
     })
 
@@ -17,8 +16,9 @@ fetch('https://jsonplaceholder.typicode.com/todos')
 let changeElement = (datas) => {
     let newEl = '';
     
+    let modifyDatas = datas.slice(0,10);
 
-    datas.forEach((data) => {
+    modifyDatas.forEach((data) => {
         newEl += `
             <div class="box">
                 <span class ="center">${data.title}</span>
@@ -30,13 +30,40 @@ let changeElement = (datas) => {
         `;
     });
 
+
     let areaArticle = document.getElementById('area');
     areaArticle.innerHTML = newEl;
 };
 
-document.getElementById('goAhead').addEventListener("click", pageNext);
+let currentPage = 1;
+let limitElement = 10;
 
-let pageOne = (datas) => {
+let allDatas = []
 
+let nextPage = () => {
 
+    currentPage += 1
+
+    document.getElementById("page").innerHTML = currentPage ;
+
+    // let newEl = '';
+    
+    // let modifyDatas = allDatas.slice(10,20);
 }
+
+let previousPage = () => {
+
+    currentPage -= 1
+
+    document.getElementById("page").innerHTML = currentPage ;
+
+    // let newEl = '';
+    
+    // let modifyDatas = allDatas.slice(10,20);
+}
+
+document.getElementById('goAhead').addEventListener("click", nextPage);
+document.getElementById('getBack').addEventListener("click", previousPage);
+
+
+
