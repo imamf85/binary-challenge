@@ -8,6 +8,7 @@ fetch('https://jsonplaceholder.typicode.com/todos')
         res.json().then((res) => {
             console.log(res);
             changeElement(res);
+            pageOne(res);
         });
     })
 
@@ -15,11 +16,12 @@ fetch('https://jsonplaceholder.typicode.com/todos')
 
 let changeElement = (datas) => {
     let newEl = '';
+    
 
     datas.forEach((data) => {
         newEl += `
-            <div>
-                <span>${data.title}</span>
+            <div class="box">
+                <span class ="center">${data.title}</span>
                 <br />
                 <span style="color: ${data.completed ? 'green' : 'red'}">${
             data.completed ? 'Complete' : 'Not Complete'
@@ -31,3 +33,10 @@ let changeElement = (datas) => {
     let areaArticle = document.getElementById('area');
     areaArticle.innerHTML = newEl;
 };
+
+document.getElementById('goAhead').addEventListener("click", pageNext);
+
+let pageOne = (datas) => {
+
+
+}

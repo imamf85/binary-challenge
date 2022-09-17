@@ -81,3 +81,8 @@ footer div {
     transition: background-color .3s;
     cursor: grab;
   }
+
+.center {
+    text-align: center;
+    padding: 10px;
+}
