@@ -78,7 +78,7 @@ let searchKeyword = (e) => {
         );
     });
 
-    changeElement(allData);
+    changeElement(filteredData);
 
 }
 
