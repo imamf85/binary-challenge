@@ -47,7 +47,6 @@ let nextPage = () => {
     document.getElementById("page").innerHTML = currentPage ;
 
     changeElement(allData);
-
     
 }
 
@@ -56,7 +55,7 @@ let previousPage = () => {
     currentPage -= 1
 
     document.getElementById("page").innerHTML = currentPage ;
-    
+
     changeElement(allData);
 
     
