@@ -12,22 +12,22 @@
 <body>
     <h1>My To Do List</h1>
 
-    <div class="search-keyword">
-        <label for="search">search user:</label>
-        <input type="search" id="search">
+    <nav>
+    <div class="flex-direction-row margin">
+        <input type="search" id="search" class="search-keyword" placeholder="hey! what are you looking for..">
+        <select name="dropdownPages" id="dropdownPages" class="dropdownPages">
+            <option value="">Choose your limit</option>
+            <option value=10>10</option>
+            <option value=20>20</option>
+            <option value=30>30</option>
+            <option value=40>40</option>
+            <option value=50>50</option>
+            <option value=60>60</option>
+        </select>
     </div>
+    </nav>
 
     <article class="grid" id="area"></article>
-
- 
-    <select name="dropdownPages" id="dropdownPages">
-        <option value=10>10</option>
-        <option value=20>20</option>
-        <option value=30>30</option>
-        <option value=40>40</option>
-        <option value=50>50</option>
-        <option value=60>60</option>
-    </select>
 
     <footer class="flex">
 

@@ -1,3 +1,37 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+    overflow: auto;
+}
+
+.search-keyword {
+
+    background-image: url('https://www.freepnglogos.com/uploads/search-png/search-icon-transparent-images-vector-16.png');
+    background-position: 10px 10px;
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 45px;
+    border: 1px solid #ddd;
+    border-radius: 50px 0 0 50px;
+
+}
+
+.margin {
+    margin: 0px 100px 12px;
+}
+
+.dropdownPages {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 50px 50px 0;
+}
 
 .grid {
     display: grid;
@@ -22,7 +56,6 @@
 .flex-direction-row {
     display: flex;
     flex-direction: row;
-    gap: 10px;
 }
 
 h1 {
@@ -31,7 +64,7 @@ h1 {
 }
 
 .box {
-    
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -46,21 +79,21 @@ h1 {
 footer {
     text-align: center;
     padding: 10px 0px;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 footer div {
 
-        text-decoration: none;
-        display: inline-block;
-        padding: 8px 16px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
 
 }
 
 .next {
     background-color: #04AA6D;
     color: white;
-  }
+}
 
 .previous {
     background-color: aliceblue;
@@ -72,7 +105,7 @@ footer div {
     float: left;
     transition: background-color .3s;
     cursor: grab;
-  }
+}
 
 .next:hover {
     background-color: aliceblue;
@@ -80,14 +113,9 @@ footer div {
     float: left;
     transition: background-color .3s;
     cursor: grab;
-  }
+}
 
 .center {
     text-align: center;
     padding: 10px;
-}
-
-.hide {
-
-    display: none;
 }

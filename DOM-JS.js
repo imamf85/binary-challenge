@@ -56,7 +56,7 @@ let previousPage = () => {
     currentPage -= 1
 
     document.getElementById("page").innerHTML = currentPage ;
-
+    
     changeElement(allData);
 
     
@@ -71,10 +71,10 @@ let chooseYourLimit = (e) => {
 
 let searchKeyword = (e) => {
 
-    const textSearch = e.target.value;
+    const textSearch = e.target.value.toLowerCase();
 
     const filteredData = allData.filter((datum) => {
-        return (datum.title.includes(textSearch) || datum.completed.includes(textSearch)
+        return (datum.title.toLowerCase().includes(textSearch)
         );
     });
 
