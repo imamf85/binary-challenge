@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,83 +8,46 @@
     <title>Our List Data</title>
     <link rel="stylesheet" href="DOM-CSS.css">
 </head>
+
 <body>
     <h1>My To Do List</h1>
-    
-    <article class="grid" id="area">
 
-            <div class="box" id="box1">
-                <span>Title</span><br>
-                <span>Caption</span>
-            </div>
+    <div class="search-keyword">
+        <label for="search">search user:</label>
+        <input type="search" id="search">
+    </div>
 
-            <!-- <div class="box">
-                <span>Title</span><br>
-                <span>Caption</span>
-            </div>
+    <article class="grid" id="area"></article>
 
-            <div class="box">
-                <span>Title</span><br>
-                <span>Caption</span>
-            </div>
-
-            <div class="box">
-                <span>Title</span><br>
-                <span>Caption</span>
-            </div>
-
-            <div class="box">
-                <span>Title</span><br>
-                <span>Caption</span>
-            </div>
-
-            <div class="box">
-                <span>Title</span><br>
-                <span>Caption</span>
-            </div>
-
-            <div class="box">
-                <span>Title</span><br>
-                <span>Caption</span>
-            </div>
-
-            <div class="box">
-                <span>Title</span><br>
-                <span>Caption</span>
-            </div>
-
-            <div class="box">
-                <span>Title</span><br>
-                <span>Caption</span>
-            </div>
-
-            <div class="box">
-                <span>Title</span><br>
-                <span>Caption</span>
-            </div> -->
-
-        </div>
-
-    </article>
+ 
+    <select name="dropdownPages" id="dropdownPages">
+        <option value=10>10</option>
+        <option value=20>20</option>
+        <option value=30>30</option>
+        <option value=40>40</option>
+        <option value=50>50</option>
+        <option value=60>60</option>
+    </select>
 
     <footer class="flex">
 
-            <div class="previous" id="getBack">
-               <span> &laquo; Previous</span> 
-            </div>
+        <div class="previous" id="getBack">
+            <span> &laquo; Previous</span>
+        </div>
 
-            <div id="page"> 
-                Page Number
-            </div>
+        <div id="page">
+            1
+        </div>
 
-            <div class="next" id="goAhead">
-                <span> Next &raquo;</span> 
-            </div>
+        <div class="next" id="goAhead">
+            <span> Next &raquo;</span>
+        </div>
 
     </footer>
 
-<script src="DOM-JS.js">
-</script>
+    <script src="DOM-JS.js">
+    </script>
 
 </body>
+
 </html>
